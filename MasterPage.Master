@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="Tarefas.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="Styles/bootstrap.css" />
+    <link rel="stylesheet" href="Styles/style.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+            <ul id="navbar">
+                <li>
+                    <a id="navHome" href="Default.aspx">Home</a>
+                </li>
+                <li>
+                    <a id="navTarefas" href="VerTarefas.aspx">Ver/Entregar tarefas</a>
+                </li>
+                <li>
+                    <a id="navAddTarefas" href="AdicionarTarefas.aspx">Adicionar tarefas</a>
+                </li>
+                <li>
+                    <a id="navDelTarefas" href="EditarTarefas.aspx">Editar/Excluir tarefas</a>
+                </li>
+                <li>
+                    <a id="navTrabalhosEntregues" href="VerTrabalhosEntregues.aspx">Ver trabalhos entregues</a>
+                </li>
+                <li>
+                    <a id="navNotas" href="Nota.aspx">Nota</a>
+                </li>
+            </ul>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <footer class="page-footer font-small pt-4">
+        <hr style="background-color:white" />
+        <p style="color:gray;margin-left:20px;">2018 | Sistema de gerenciamento de tarefas.</p>
+    </footer>
+</body>
+</html>

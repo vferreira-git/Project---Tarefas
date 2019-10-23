@@ -1,0 +1,79 @@
+﻿body {
+    background: white;
+}
+
+#navbar {
+    background-color: #2d2b29;
+    height: 50px;
+    width: 100%;
+    border-bottom: solid #333;
+}
+
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+    ul li {
+        float:left;
+    }
+
+        ul li a {
+            display: block;
+            margin: auto;
+            border: none;
+            background: none;
+            padding: 14px 16px;
+            color: white;
+            text-decoration: none;
+        }
+
+            ul li a:hover {
+                color: gray;
+                text-decoration: none;
+            }
+
+.active {
+    background-color: gray;
+    text-decoration: none;
+}
+
+#WelcomePage {
+    margin: 20px 0px;
+    text-align: center;
+    height: 400px;
+}
+
+    #WelcomePage div {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 15px;
+        color: darkslategrey;
+        width: 30%;
+        border-radius: 10px;
+    }
+    #WelcomePage #divAvisos {
+        vertical-align:top;
+        padding: 15px;
+        color: darkslategrey;
+        width: 30%;
+        border-radius: 10px;
+    }
+div p {
+    font-size:20px;
+}
+
+#divTabela {
+    width:100%;
+}
+
+    #divTabela thead {
+        background-color: white;
+    }
+
+#datagridTarefas {
+    width:100%;
+}
+
